@@ -42,7 +42,7 @@ $("#calcular").click(function(){
                 font-style: normal;font-weight: 300; background: #E2E2E2;box-shadow: 1% 3% 2%px rgba(0, 0, 0, 0.1);
                 border-radius: 10px"><img class="mx-2" style="height:10px" src="../img/punto.png"> <span style="font-family: 'Inter';font-style: normal;font-weight: 700;">RIG </span> con ${resultado.cantidad} placa ${resultado.placa} </div>
                 <div class="col-9 mx-auto">
-                <table class="table">
+                <table class="table" >
                 <thead>
                   <tr>
                     <th scope="col"></th>
@@ -53,31 +53,31 @@ $("#calcular").click(function(){
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"></th>
-                    <td>Motherboard (MSI / ASUS)</td>
+                    <th scope="row"><img class="componentes" src="../img/mother.png"></th>
+                    <td class="align-middle">Motherboard (MSI / ASUS)</td>
                     <td>65w</td>
                     <td>69,77</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
-                    <td>Microporcesador 7ma generación (INTEL I3/AMD RYZEN 5)</td>
+                    <th scope="row"><img class="componentes" src="../img/core.png"></th>
+                    <td class="align-middle">Microporcesador 7ma generación (INTEL I3/AMD RYZEN 5)</td>
                     <td>56w</td>
                     <td>89,99</td>
                   </tr>
                   <tr>
-                    <th scope="row"></th>
-                    <td>Disco Rigido</td>
+                    <th scope="row"><img class="componentes" src="../img/disco.png"></th>
+                    <td class="align-middle">Disco Rigido</td>
                     <td>66w</td>
                     <td>145</td>
                 <tr>
-                    <th scope="row"></th>
-                    <td>Memoria</td>
+                    <th scope="row"><img class="componentes" src="../img/ram.png"></th>
+                    <td class="align-middle">Memoria</td>
                     <td>92w</td>
                     <td>679,99</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
-                    <td>Memoria</td>
+                    <th scope="row"><img class="componentes" src="../img/video.png"></th>
+                    <td class="align-middle">Memoria Placa de video 1660 super</td>
                     <td>92w</td>
                     <td>27.99</td>
                 </tr>

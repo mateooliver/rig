@@ -23,7 +23,7 @@
   }
   .calculadoraBkg{
     padding: 20px;
-    width: 45vw;
+    width: 60vw;
     height: 35vh;
     background: rgba(255, 243, 255, 0.459);
     box-shadow: 0px 9px 24px rgba(142, 142, 142, 0.25);
@@ -34,8 +34,9 @@
     width: 15vw;
     height: 7vh;
 }
-.monedas{
-    margin-left: 20%;
+
+.centrarInput{
+    text-align: center;
 }
 .ancho{ 
     width:70vw;
@@ -88,4 +89,7 @@
     color:white;
     font-size: 16px;
   }
+  .componentes{
+      display: none;
+}
 }

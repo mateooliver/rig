@@ -14,6 +14,9 @@ font-family: 'Inter', sans-serif;
 .marginTop{
     margin-top: 6vh;
 }
+.centrarInput{
+    text-align: unset;
+}
 .imagen{
     height:30vh;
     width: auto;
@@ -151,4 +154,12 @@ select:focus{ outline: none;}
     color:white;
     font-size: 22px;
 
+  }
+  .table{
+      margin: 0 auto 30px auto;
+      width: 65vw;
+  }
+  .componentes{
+      height: 40px;
+      width: auto;
   }
