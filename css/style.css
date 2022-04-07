@@ -97,9 +97,10 @@ select:focus{ outline: none;}
     border:#E61B80 solid 3px;
     background: #ffff;
     color: #E61B80;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
     text-align: center;
-    width: auto;
     font-weight: 700;
 }
 #input{
