@@ -100,14 +100,14 @@
   .componentes{
       display: none;
 }
-#sumar{
+.sumar{
     padding: unset;
     height: 30px;
     width: 30px;
   
 
 }
-#restar{
+.restar{
     padding: unset;
     height: 32px;
     width: 32px;

@@ -79,7 +79,7 @@ opacity: 0.7;
 }
 
 select:focus{ outline: none;}
-#sumar{
+.sumar{
     padding: auto;
     border:#E61B80 solid 3px;
     background: #ffff;
@@ -92,7 +92,7 @@ select:focus{ outline: none;}
     font-weight: 700;
 
 }
-#restar{
+.restar{
     padding: auto;
     border:#E61B80 solid 3px;
     background: #ffff;
