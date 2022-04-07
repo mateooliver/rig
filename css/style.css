@@ -17,6 +17,13 @@ font-family: 'Inter', sans-serif;
 .centrarInput{
     text-align: unset;
 }
+.titulo{
+    font-size:5vh
+}
+.titulo span{
+    margin-top: 10%;
+    font-size:5vh
+}
 .imagen{
     height:30vh;
     width: auto;
@@ -78,10 +85,12 @@ select:focus{ outline: none;}
     background: #ffff;
     color: #E61B80;
     border-radius: 50%;
-    height: auto;
+    height: 30px;
+    width: 30px;
     text-align: center;
     width: auto;
     font-weight: 700;
+
 }
 #restar{
     padding: auto;
@@ -89,7 +98,6 @@ select:focus{ outline: none;}
     background: #ffff;
     color: #E61B80;
     border-radius: 50%;
-    height: auto;
     text-align: center;
     width: auto;
     font-weight: 700;

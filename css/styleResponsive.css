@@ -12,7 +12,14 @@
     .responsive{
         display: block;
     }
-
+    .titulo{
+        font-size:5vh
+    }
+    .titulo span{
+        margin: 10% 0 20% 0;
+            font-size:3vh
+    }
+    
     .imagen{
         height:15vh;
         width: auto;
