@@ -13,6 +13,7 @@
         display: block;
     }
     .titulo{
+        width: 93vw;
         font-size:5vh
     }
     .titulo span{
@@ -98,5 +99,18 @@
   }
   .componentes{
       display: none;
+}
+#sumar{
+    padding: unset;
+    height: 30px;
+    width: 30px;
+  
+
+}
+#restar{
+    padding: unset;
+    height: 32px;
+    width: 32px;
+  
 }
 }
