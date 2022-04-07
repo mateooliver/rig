@@ -1,0 +1,91 @@
+@media (max-width: 820px) {
+    html{
+        height: unset;
+    }
+    .backgroundRing{
+      
+        background-image: url(../img/ondas.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y:60vh;
+    }
+    .responsive{
+        display: block;
+    }
+
+    .imagen{
+        height:15vh;
+        width: auto;
+    }
+  .textoStyle{
+   
+      font-size: 120%;
+  }
+  .calculadoraBkg{
+    padding: 20px;
+    width: 45vw;
+    height: 35vh;
+    background: rgba(255, 243, 255, 0.459);
+    box-shadow: 0px 9px 24px rgba(142, 142, 142, 0.25);
+    border-radius: 45px;
+}
+#input{
+   margin: 10% 0 10% 0;
+    width: 15vw;
+    height: 7vh;
+}
+.monedas{
+    margin-left: 20%;
+}
+.ancho{ 
+    width:70vw;
+
+}
+.resultado{
+    width: 80vw;
+}
+.botonCompartir{
+    height:25px; 
+    width:35px; 
+    background:#E61B80; 
+    border-radius:10px; 
+    border:none;
+}
+.botonCompartir img{
+    height:10px; 
+    width:10px; 
+   
+}
+.comprarOnline{
+    align-self: center;
+    font-weight: 400;
+   width:fit-content; 
+   text-align:center; 
+   background-color:#E6D21B; 
+   padding: 0 5% 0 5%; 
+   border-radius:20px;
+   font-size: 15px;
+   
+}
+.valor{ 
+    margin-left:40% ;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+     font-weight: 800;
+     font-size: 10px;
+  }
+  .precio{
+      margin-top: -8%;
+  }
+  .backgroundPrecio{
+    width: fit-content;
+    margin-left:10%; 
+    text-align:center; 
+    background:#E61B80; 
+    padding:0 5% 0 5%;
+    border-radius:20px;
+    color:white;
+    font-size: 16px;
+  }
+}
