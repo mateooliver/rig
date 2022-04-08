@@ -49,11 +49,13 @@
     text-align: center;
 }
 .ancho{ 
-    width:70vw;
-
+    width:95vw;
+}
+.ancho2{ 
+    width:98vw;
 }
 .resultado{
-    width: 80vw;
+    width: 90vw;
 }
 .botonCompartir{
     height:25px; 
@@ -102,17 +104,9 @@
   .componentes{
       display: none;
 }
-.sumar{
-    padding: unset;
-    height: 30px;
-    width: 30px;
-  
-
-}
-.restar{
-    padding: unset;
-    height: 32px !important;
-    width: 32px  !important;
-  
+.textoResultado{
+    text-align: left;
+    margin: auto;
+    font-size: 4vw;
 }
 }
