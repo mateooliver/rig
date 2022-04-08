@@ -1,3 +1,18 @@
+// funcion del selec divisa
+$("ul").on("click", ".init", function() {
+  $(this).closest("ul").children('li:not(.init)').toggle();
+});
+
+var allOptions = $("ul").children('li:not(.init)');
+$("ul").on("click", "li:not(.init)", function() {
+  allOptions.removeClass('selected');
+  $(this).addClass('selected');
+  $("ul").children('.init').html($(this).html());
+  allOptions.toggle();
+});
+
+
+
 
      $("#sumar").click(function(){
         var input = $("#input").val();
@@ -20,7 +35,10 @@ var resultado= ""
 
 let card=
 
-$("#calcular").click(function calcular(){
+$("#calcular").click(function Calcular (e){
+    e.stopPropagation();
+   
+
         $("#resultado").empty();
         var input = $("#input").val();
         input = parseInt(input);
@@ -48,12 +66,16 @@ $("#calcular").click(function calcular(){
               </div> 
             </div>`)
               
-            $(`#${resultado.id}`).click(function(){
+            $(`#${resultado.id}`).click(function(e){
+              e.preventDefault()
+              e.stopPropagation()
+                
+
                 $("#resultado").empty()
                 $("#resultado").append(`<div id=${resultado.id} class="d-flex ancho2 mx-auto align-items-center" style="margin-top:2vh; height:8vh; font-family: 'Inter';
                 font-style: normal;font-weight: 300; background: #E2E2E2;box-shadow: 1% 3% 2%px rgba(0, 0, 0, 0.1);
                 border-radius: 50px">
-                <div class="my-auto  btn" onClick="{calcular ()}" style="font-weight: 300; background: rgba(238, 32, 134, 0.25);border-radius: 50px; color:white; height:8vh; width: fit-content; padding:0 3% 0 0%;"><div class="d-flex " style="height:8vh;"><img class="my-auto mx-1" style="height:25px;" src="../img/atras.png"><p class="fs-4 my-auto" > Atras</p></div></div>
+                <div class="my-auto  btn" id='atras' style="font-weight: 300; background: rgba(238, 32, 134, 0.25);border-radius: 50px; color:white; height:8vh; width: fit-content; padding:0 1% 0 0%;"><div class="d-flex mx-3" style="height:8vh;"><img class="my-auto mx-1" style="height:25px;" src="../img/atras.png"><p class="fs-4 my-auto" > Atras</p></div></div>
 
                   <div class="d-flex justify-content-between" style="width:100%;" >
                     <div class="d-flex" >
@@ -74,43 +96,38 @@ $("#calcular").click(function calcular(){
                   <tr>
                     <th scope="col"></th>
                     <th scope="col"></th>
-                    <th scope="col">w</th>
-                    <th scope="col">mh/s</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row"><img class="componentes" src="../img/mother.png"></th>
                     <td class="align-middle">Motherboard (MSI / ASUS)</td>
-                    <td>65w</td>
-                    <td>69,77</td>
+           
+  
                   </tr>
                   <tr>
                     <th scope="row"><img class="componentes" src="../img/core.png"></th>
                     <td class="align-middle">Microporcesador 7ma generación (INTEL I3/AMD RYZEN 5)</td>
-                    <td>56w</td>
-                    <td>89,99</td>
+
                   </tr>
                   <tr>
                     <th scope="row"><img class="componentes" src="../img/disco.png"></th>
                     <td class="align-middle">Disco Rigido</td>
-                    <td>66w</td>
-                    <td>145</td>
+
                 <tr>
                     <th scope="row"><img class="componentes" src="../img/ram.png"></th>
                     <td class="align-middle">Memoria</td>
-                    <td>92w</td>
-                    <td>679,99</td>
+
                 </tr>
                 <tr>
                     <th scope="row"><img class="componentes" src="../img/video.png"></th>
                     <td class="align-middle">Memoria Placa de video 1660 super</td>
-                    <td>92w</td>
-                    <td>27.99</td>
+
                 </tr>
                 </tbody>
     
               </table>
+              <hr>
               </div>
                 <div class="resultado mx-auto ">
                     <div class="d-flex d-flex flex-row justify-content-between ">
@@ -129,6 +146,8 @@ $("#calcular").click(function calcular(){
                 `
                
              )
-              })
+             $("#atras").click( function(){  
+              $("#resultado").empty()})
+            })
              
     });

@@ -37,13 +37,13 @@ font-size: 4vh;
 line-height: 42px;
 text-align: center;
 color: #717171;
-opacity: 0.7;
+
 }
 .calculadoraBkg{
     padding: 20px;
     width: 45vw;
     height: 90px;
-    background: rgba(255, 243, 255, 0.459);
+    background: rgb(253, 244, 253);
     box-shadow: 0px 9px 24px rgba(142, 142, 142, 0.25);
     border-radius: 45px;
 }
@@ -58,7 +58,7 @@ opacity: 0.7;
 }
 .monedas{
     color: #717171;
-    background: rgba(255, 243, 255, 0.459);
+    background: rgba(255, 243, 255);
     border: none;
     font-family: 'Inter';
     font-style: normal;
@@ -69,7 +69,7 @@ opacity: 0.7;
 .monedasOpciones{
     align-self: center;
     color: #717171;
-    background: rgba(255, 243, 255, 0.459);
+    background: rgba(255, 243, 255, 1);
     border: none;
     font-family: 'Inter';
     font-style: normal;
@@ -83,6 +83,10 @@ select:focus{ outline: none;}
   border: none;
   background: none;
 
+}
+.boton img{
+    height: auto;
+    width: 2vw;
 }
 
 
@@ -101,12 +105,13 @@ select:focus{ outline: none;}
     border-radius: 10px;
 }
 .responsive{
+    position: relative;
     display: flex;
     flex-direction: row;
 }
 /* ancho del card que aparece al aporetar el calcular */
 .ancho{ 
-    width:65vw;
+    width:50vw;
     margin-top:2vh; 
     height:8vh; 
     font-family: 'Inter';
@@ -170,4 +175,57 @@ select:focus{ outline: none;}
       margin: auto;
       font-size: 22px;
   }
- 
+ /* edicion select */
+ ul { 
+    height: 50px;
+    width: 1vw;
+    border: none;
+
+  
+}
+.divisas{
+    margin: auto;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 3vh;
+line-height: 60px;
+    color: white;
+    
+
+}
+
+ul li { padding:0 0 0 20%; z-index: 52;  ;}
+ul li:not(.init) { float:start; width:8vw; display: none; background: #c4c4c4;  }
+ul li:not(.init):hover, ul li.selected:not(.init) { color:#6A6A6A; }
+li.init { cursor: pointer;
+color:#E61B80;}
+
+a#submit { z-index: 100; }
+
+/* bootsrap dropdown */
+.table>:not(:first-child) {
+    border-top: none;
+}
+.table>:not(caption)>*>* {
+   
+    border-bottom-width: unset;
+  
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: none;
+    border-width: 0;
+}
+.ayuda{
+    position: sticky;
+    top: 90%;
+    left: 80%;
+    bottom: 10%;
+    background: linear-gradient(90deg, #128EDE 0%, #5CB7F2 99.99%);
+    box-shadow: 3px 3px 4px rgba(130, 130, 130, 0.2);
+    border-radius: 44px;
+    width:fit-content ;
+    padding: 10px;
+    height: auto;
+}

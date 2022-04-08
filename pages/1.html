@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/styleResponsive.css">
 </head>
 <body class="backgroundRing size">
-    <section >
+    <section style="height: 100vh;">
         <div>
             <div class="my-4 titulo" style="font-family:Inter; font-weight:800;text-align:Center;">Calculamos que sale tu Ring</br>
             <span style="font-family:Inter; font-weight:300;text-align:Center;">Según lo que puedas invertir.</span></div>
@@ -22,31 +22,38 @@
         <div class="responsive justify-content-center marginTop">
             <!--  calculadora -->
             <div class="calculadoraBkg mx-auto responsive justify-content-between align-items-center">
-                <div class="centrarInput">
-                    <select class="monedas " name="" id="">
-                        <option class="monedasOpciones" value="usd">USD</option>
-                        <option class="monedasOpciones" value="btc">BTC</option>
-                        <option class="monedasOpciones"value="eth">ETH</option>
-                    </select>
+                
+                <div class=" " >
+                    <ul class="list-unstyled divisas " style="width: 120px; height: 60px;">
+                        <li class="init" style="height: 10vh;">USD <img style="height: 8px; width: 17px; margin-left: 4%;" src="../img/abajo.png" alt=""></li>
+                        <li data-value="value 1" style="position: relative; z-index:0;">BTC</li>
+                        <li data-value="value 2"style="position: relative; z-index:0; border-radius:0 0 10px 10px;">ETH</li>
+                    </ul>
                 </div>
+
+           
+
                 <div class="centrarInput"> 
-                    <button class="boton" id="restar"><img src="../img/menos.png" alt="menos"></button>
+                    <button class="boton" id="restar"><img style="" src="../img/menos.png" alt="menos"></button>
                     <input type="tel" class="" id="input" value="0"></input>
                     <button class="boton" id="sumar" ><img src="../img/mas.png" alt="menos"></button>
                 </div>
                 
-                <div class="centrarInput"><button id="calcular" class="text-white ">Calcular <img style="height:4vh;" class="ms-2" src="../img/Vector.png" alt=""></button></div>
+                <div class="centrarInput"><button id="calcular" class="text-white "><img style="height:4vh;" class="ms-2" src="../img/Vector.png" alt=""> Calcular </button></div>
             </div>
         </div>
         <div id="resultado" >
            
         </div>
-
+        <div class="ayuda">¿Necesitas ayuda?</div>
+      
 
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
-    
+    <script>
+        
+    </script>
 </body>
 </html>

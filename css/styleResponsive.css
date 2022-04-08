@@ -102,11 +102,21 @@
     font-size: 16px;
   }
   .componentes{
-      display: none;
+      margin-left: -80%;
+     height: auto;
+     width: 12vw;
 }
 .textoResultado{
     text-align: left;
     margin: auto;
     font-size: 4vw;
+}
+
+
+ul li:not(.init) { float:start; width:120px; display: none; background: #c4c4c4;  }
+
+.boton img{
+    width: 40px;
+    height: auto;
 }
 }
