@@ -20,11 +20,11 @@ var resultado= ""
 
 let card=
 
-$("#calcular").click(function(){
+$("#calcular").click(function calcular(){
         $("#resultado").empty();
         var input = $("#input").val();
         input = parseInt(input);
-
+        
        
         if((input <= 200)) {
            var resultado= RIG.find((rig) =>{return rig.precio <=200} );
@@ -35,7 +35,7 @@ $("#calcular").click(function(){
         }else if (input >= 400) {
              var resultado=RIG.find((rig) =>{return rig.precio >=400});
     }
-         $("#resultado").prepend(` <div id=${resultado.id} class="d-flex justify-content-between ancho mx-auto align-items-center " >
+         $("#resultado").prepend(` <div id=${resultado.id} class="d-flex justify-content-between ancho mx-auto align-items-center sombraHover" >
             <div class="d-flex">
               <img class="mx-2 align-self-center" style="height:10px" src="../img/punto.png"> 
               <span style="font-family: 'Inter';font-style: normal;font-weight: 700; margin:auto;">RIG </span>
@@ -53,7 +53,7 @@ $("#calcular").click(function(){
                 $("#resultado").append(`<div id=${resultado.id} class="d-flex ancho2 mx-auto align-items-center" style="margin-top:2vh; height:8vh; font-family: 'Inter';
                 font-style: normal;font-weight: 300; background: #E2E2E2;box-shadow: 1% 3% 2%px rgba(0, 0, 0, 0.1);
                 border-radius: 50px">
-                <div class="my-auto calcularbtn btn" style="font-weight: 300; background: rgba(238, 32, 134, 0.25);border-radius: 50px; color:white; height:8vh; width: fit-content; padding:0 3% 0 0%;"><div class="d-flex " style="height:8vh;"><img class="my-auto mx-1" style="height:25px;" src="../img/atras.png"><p class="fs-4 my-auto" > Atras</p></div></div>
+                <div class="my-auto  btn" onClick="{calcular ()}" style="font-weight: 300; background: rgba(238, 32, 134, 0.25);border-radius: 50px; color:white; height:8vh; width: fit-content; padding:0 3% 0 0%;"><div class="d-flex " style="height:8vh;"><img class="my-auto mx-1" style="height:25px;" src="../img/atras.png"><p class="fs-4 my-auto" > Atras</p></div></div>
 
                   <div class="d-flex justify-content-between" style="width:100%;" >
                     <div class="d-flex" >
