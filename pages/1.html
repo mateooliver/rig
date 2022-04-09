@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleResponsive.css">
 </head>
-<body class="backgroundRing size">
+<body class="backgroundRing1 size">
     <section style="height: 100vh;">
         <div>
             <div class="my-4 titulo" style="font-family:Inter; font-weight:800;text-align:Center;">Calculamos que sale tu Ring</br>
@@ -25,16 +25,17 @@
                 
                 <div class=" " >
                     <ul class="list-unstyled divisas " style="width: 120px; height: 60px;">
-                        <li class="init" style="height: 10vh;">USD <img style="height: 8px; width: 17px; margin-left: 4%;" src="../img/abajo.png" alt=""></li>
-                        <li data-value="value 1" style="position: relative; z-index:0;">BTC</li>
-                        <li data-value="value 2"style="position: relative; z-index:0; border-radius:0 0 10px 10px;">ETH</li>
+                        <li class="init altoDivisas">USD <img style="height: 8px; width: 17px; margin-left: 4%;" src="../img/abajo.png" alt=""></li>
+                        <li data-value="value 1" id="btc" style="position: relative; z-index:0;">BTC </li>
+                        <li data-value="value 3"  id="usd" style="position: relative; z-index:0;"> </li>
+                        <li data-value="value 2" id="eth" style="position: relative; z-index:0; border-radius:0 0 10px 10px;">ETH </li>
                     </ul>
                 </div>
 
            
 
                 <div class="centrarInput"> 
-                    <button class="boton" id="restar"><img style="" src="../img/menos.png" alt="menos"></button>
+                    <button class="boton" id="restar"><img src="../img/menos.png" alt="menos"></button>
                     <input type="tel" class="" id="input" value="0"></input>
                     <button class="boton" id="sumar" ><img src="../img/mas.png" alt="menos"></button>
                 </div>
@@ -45,7 +46,7 @@
         <div id="resultado" >
            
         </div>
-        <div class="ayuda">¿Necesitas ayuda?</div>
+        <div class="ayuda ">¿Necesitas ayuda?</div>
       
 
     </section>
@@ -53,7 +54,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
     <script>
-        
+    
     </script>
 </body>
 </html>

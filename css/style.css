@@ -1,15 +1,26 @@
 html{
 font-family: 'Inter', sans-serif;  
+
 }
 .size{
-    height: 100vh;
+    height: 99vh;
     width: 100vw;
 }
 .backgroundRing{
-    background-image: url(../img/ondas.png);
+    background: #F7F7F7;
+    background-image: url(../img/backgroundRig.png);
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position-y:75vh;
+    background-size: cover;
+   
+}
+.backgroundRing1{
+    background: #F7F7F7;
+    background-image: url(../img/backgroundRig1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -8vw;
+   
+
 }
 .marginTop{
     margin-top: 6vh;
@@ -128,13 +139,8 @@ select:focus{ outline: none;}
 .resultado{
     width: 65vw;
 }
-.botonCompartir{
-        height:30px; 
-        width:50px; 
-        padding:1%; 
-        background:#E61B80; 
-        border-radius:10px; 
-        border:none;
+.botonCompartir div img{  
+    height: 75%;     
 }
 .comprarOnline{
   
@@ -228,4 +234,7 @@ tbody, td, tfoot, th, thead, tr {
     width:fit-content ;
     padding: 10px;
     height: auto;
+}
+.altoDivisas{
+    height: 10vh;
 }

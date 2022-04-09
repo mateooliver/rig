@@ -131,9 +131,9 @@ $("#calcular").click(function Calcular (e){
               </div>
                 <div class="resultado mx-auto ">
                     <div class="d-flex d-flex flex-row justify-content-between ">
-                        <div class="d-flex my-auto">
-                            <div class="text-center mx-1 botonCompartir" ><img src="../img/compartir.png"></div>
-                            <div class="text-center mx-1 botonCompartir" ><img  src="../img/descargar.png"></div>
+                        <div class="d-flex my-auto botonCompartir">
+                            <div class=" " ><img src="../img/compartir.png"></div>
+                            <div class=" " ><img  src="../img/descargar.png"></div>
                         </div> 
                         <div class="comprarOnline" > Comprar online</div>
                         <div class="responsive precio">
@@ -151,3 +151,10 @@ $("#calcular").click(function Calcular (e){
             })
              
     });
+    
+    $("#btc").click(()=>{
+      $("#usd").text("USD")
+    })
+    $("#eth").click(()=>{
+      $("#usd").text("USD")
+    })
