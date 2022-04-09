@@ -131,9 +131,9 @@ ul li:not(.init) { float:start; width:120px; display: none; background: #c4c4c4;
 }
 .ayuda{
     position: sticky;
-    top: 90%;
+    top: 95%;
     left: 80%;
-    bottom: 10%;
+    bottom: 2%;
     
 }
 .size{
