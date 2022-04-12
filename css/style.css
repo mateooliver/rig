@@ -52,11 +52,11 @@ color: #717171;
 }
 .calculadoraBkg{
     padding: 20px;
-    width: 45vw;
+    width: 55vw;
     height: 90px;
     background: rgb(253, 244, 253);
     box-shadow: 0px 9px 24px rgba(142, 142, 142, 0.25);
-    border-radius: 45px;
+    border-radius: 25px;
 }
 #calcular{
     padding: 10px 3vw 10px 3vw;
@@ -117,6 +117,7 @@ select:focus{ outline: none;}
 }
 .responsive{
     position: relative;
+    
     display: flex;
     flex-direction: row;
 }
@@ -201,8 +202,8 @@ line-height: 60px;
 
 }
 
-ul li { padding:0 0 0 20%; z-index: 52;  ;}
-ul li:not(.init) { float:start; width:8vw; display: none; background: #c4c4c4;  }
+ul li {text-align: center ; position: unset;}
+ul li:not(.init) { margin-left:15px; float:start; width:80px; display: none; background: #c4c4c4;  }
 ul li:not(.init):hover, ul li.selected:not(.init) { color:#6A6A6A; }
 li.init { cursor: pointer;
 color:#E61B80;}
@@ -236,5 +237,14 @@ tbody, td, tfoot, th, thead, tr {
     height: auto;
 }
 .altoDivisas{
-    height: 10vh;
+    height: fit-content;
+}
+.flecha{
+   
+    position: absolute;
+     top:40%; 
+     left: 70%; 
+     height: 8px; 
+     width: 17px; 
+     margin-left: 4%;
 }

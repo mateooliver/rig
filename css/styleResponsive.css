@@ -119,15 +119,15 @@
     font-size: 4vw;
 }
 
-
-ul li:not(.init) { float:start; width:120px; display: none; background: #c4c4c4;  }
+ul li {text-align: center ; position: relative; }
+ul li:not(.init) { float:inline-start; width:100px; display: none; background: #c4c4c4; margin-left: 10px; }
 
 .boton img{
     width: 40px;
     height: auto;
 }
 .altoDivisas{
-    height: 8vh;
+    height: 40px;
 }
 .ayuda{
     position: sticky;
@@ -140,4 +140,13 @@ ul li:not(.init) { float:start; width:120px; display: none; background: #c4c4c4;
         height: 110vh;
         width: 100vw;
     }
+
+.flecha{
+    position: absolute;
+     top: 3vh; 
+     left: 37vw; 
+     height: 8px; 
+     width: 17px; 
+     margin-left: 4%;
+}
 }
