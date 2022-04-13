@@ -119,8 +119,8 @@
     font-size: 4vw;
 }
 
-ul li {text-align: center ; position: relative; }
-ul li:not(.init) { float:inline-start; width:100px; display: none; background: #c4c4c4; margin-left: 10px; }
+ul li {text-align: center ; position: relative; z-index: 2;}
+ul li:not(.init) { float:start; width:100px; display: none; background: #c4c4c4; margin-left: 10px; }
 
 .boton img{
     width: 40px;
