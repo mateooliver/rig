@@ -384,3 +384,56 @@ $("#calcular").click(function Calcular (e){
             
           })
     }});
+
+
+    // pagina 3
+  const placasMax=6;
+      $("#sumarPagina3-1660").click(function(){
+          var cantidad = parseInt($("#inputPagina3-1660").val());
+          if(cantidad <6){
+          cantidad++;
+          $("#inputPagina3-1660").val(cantidad);}
+  
+      });
+      $("#restarPagina3-1660").click(function(){
+          var cantidad = parseInt($("#inputPagina3-1660").val());
+          if(cantidad > 0){
+          cantidad--;
+          $("#inputPagina3-1660").val(cantidad);}
+      });
+      $("#sumarPagina3-3090").click(function(){
+          var cantidad = parseInt($("#inputPagina3-3090").val());
+          if(cantidad <6){
+          cantidad++;
+          $("#inputPagina3-3090").val(cantidad);}
+      });
+      $("#restarPagina3-3090").click(function(){
+          var cantidad = parseInt($("#inputPagina3-3090").val());
+          if(cantidad > 0){
+          cantidad--;
+          $("#inputPagina3-3090").val(cantidad);}
+      });
+      $("#sumarPagina3-3060").click(function(){
+          var cantidad = parseInt($("#inputPagina3-3060").val());
+          if(cantidad <6){
+          cantidad++;
+          $("#inputPagina3-3060").val(cantidad);}
+      });
+      $("#restarPagina3-3060").click(function(){
+          var cantidad = parseInt($("#inputPagina3-3060").val());
+          if(cantidad > 0){
+          cantidad--;
+          $("#inputPagina3-3060").val(cantidad);}
+      });
+      $("#sumarPagina3-1660GTX").click(function(){
+          var cantidad = parseInt($("#inputPagina3-1660GTX").val());
+          if(cantidad <6){
+          cantidad++;
+          $("#inputPagina3-1660GTX").val(cantidad);}
+      });
+      $("#restarPagina3-1660GTX").click(function(){
+          var cantidad = parseInt($("#inputPagina3-1660GTX").val());
+          if(cantidad > 0){
+          cantidad--;
+          $("#inputPagina3-1660GTX").val(cantidad);}
+      });
