@@ -395,25 +395,47 @@ $("#calcular").click(function Calcular (e){
   //    var resultado2 = parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4);
   //  console.log(resultado2)
   //  });
-  var resultado2=0
-  while(resultado2 <6){
-  $(".btn-increase, .btn-decrease").click(function(){
+  let resultado2=parseInt(0)
+
+  if(resultado2 <=6){
+   
+  $(".btn-increase").click(function(){
     var placa1= $("#inputPagina3-1660").val();
       var placa2=$("#inputPagina3-3090").val();
       var placa3= $("#inputPagina3-3060").val();
       var placa4=  $("#inputPagina3-1660GTX").val();
-    resultado2 = 1+ parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4);
-    console.log(resultado2)
-    $("#resultado").text(resultado2 + "/ 6 placas")
+    resultado2 = (parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4)) +1;
+    if(resultado2 <=6 ){
+    $("#resultado").text(resultado2 + "/6 placas")
+    $(`.btn-decrease img`).attr("src", '../img/menos.png');
+      if(resultado2 ===6 ){
+    $(".btn-increase").attr("disabled", true);
+    $(".btn-increase img").attr("src", "../img/masDisabled.png");
+    }
+}
+});
+  $(".btn-decrease").click(function(){
+    var placa1= $("#inputPagina3-1660").val();
+      var placa2=$("#inputPagina3-3090").val();
+      var placa3= $("#inputPagina3-3060").val();
+      var placa4=  $("#inputPagina3-1660GTX").val();
+    resultado2 = (parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4)) -1;
+    
+    if (resultado2 > 0){
+    $("#resultado").text(resultado2 + "/6 placas")
+      if(resultado2 <6 ){
+         $(".btn-increase").attr("disabled", false);
+         $(".btn-increase img").attr("src", "../img/mas.png");   
+         }
+    }else if(resultado2 == 0){
+      $(`.btn-decrease img`).attr("src", '../img/menosDisabled.png');
+      $("#resultado").text("0/6 placas")
+    }
+   
+  })
+}
 
-    })
-  }
 
-   var resultado=0;
-    const  placasMax=6
-
-
-      if (resultado <6){
         $("#sumarPagina3-1660").click(function (){
           var cantidad = parseInt($("#inputPagina3-1660").val());
           if((cantidad <6)){
@@ -467,7 +489,15 @@ $("#calcular").click(function Calcular (e){
           $("#inputPagina3-1660GTX").val(cantidad);}
       });
   
-    }
-  
-  
+
+
+// desaparicion de barra al apretar el boton de sumar
+$("button").click(function(){  
+  $("#barraSelecciona").fadeOut('slow');
+  $('#tablaPlacas').delay('300');
+  $('#tablaPlacas').css('margin-top', '-50px');
+ 
+})
+
+// edicion de precio segun placa elegida
 
