@@ -387,29 +387,58 @@ $("#calcular").click(function Calcular (e){
 
 
     // pagina 3
-  const placasMax=6;
-      $("#sumarPagina3-1660").click(function(){
+  //   $(".inputPagina3").change(function(){
+  //     var placa1= $("#inputPagina3-1660").val();
+  //      var placa2=$("#inputPagina3-3090").val();
+  //     var placa3= $("#inputPagina3-3060").val();
+  //    var placa4=  $("#inputPagina3-1660GTX").val();
+  //    var resultado2 = parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4);
+  //  console.log(resultado2)
+  //  });
+  var resultado2=0
+  while(resultado2 <6){
+  $(".btn-increase, .btn-decrease").click(function(){
+    var placa1= $("#inputPagina3-1660").val();
+      var placa2=$("#inputPagina3-3090").val();
+      var placa3= $("#inputPagina3-3060").val();
+      var placa4=  $("#inputPagina3-1660GTX").val();
+    resultado2 = 1+ parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4);
+    console.log(resultado2)
+    $("#resultado").text(resultado2 + "/ 6 placas")
+
+    })
+  }
+
+   var resultado=0;
+    const  placasMax=6
+
+
+      if (resultado <6){
+        $("#sumarPagina3-1660").click(function (){
           var cantidad = parseInt($("#inputPagina3-1660").val());
-          if(cantidad <6){
+          if((cantidad <6)){
           cantidad++;
-          $("#inputPagina3-1660").val(cantidad);}
-  
+          $("#inputPagina3-1660").val(cantidad);
+          }
       });
+   
       $("#restarPagina3-1660").click(function(){
           var cantidad = parseInt($("#inputPagina3-1660").val());
-          if(cantidad > 0){
+          if((cantidad > 0)){
           cantidad--;
-          $("#inputPagina3-1660").val(cantidad);}
+          $("#inputPagina3-1660").val(cantidad);
+         
+        }
       });
       $("#sumarPagina3-3090").click(function(){
           var cantidad = parseInt($("#inputPagina3-3090").val());
-          if(cantidad <6){
+          if((cantidad <6)){
           cantidad++;
           $("#inputPagina3-3090").val(cantidad);}
       });
       $("#restarPagina3-3090").click(function(){
           var cantidad = parseInt($("#inputPagina3-3090").val());
-          if(cantidad > 0){
+          if((cantidad > 0)){
           cantidad--;
           $("#inputPagina3-3090").val(cantidad);}
       });
@@ -437,3 +466,8 @@ $("#calcular").click(function Calcular (e){
           cantidad--;
           $("#inputPagina3-1660GTX").val(cantidad);}
       });
+  
+    }
+  
+  
+
