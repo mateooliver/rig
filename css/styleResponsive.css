@@ -149,4 +149,23 @@ ul li:not(.init) { float:start; width:100px; display: none; background: #c4c4c4;
      width: 17px; 
      margin-left: 4%;
 }
+
+
+
+/* pagina 3 */
+.resultadoPagina3{
+    width: 80vw;
+}
+.barraAncho{
+    margin-left: -10vw;
+  width:  80vw;
+}
+.inputPagina3{
+    width:40px;
+    height: 35px;
+}
+.placasEnTotal{
+
+    font-size: 13px;
+}
 }

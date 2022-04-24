@@ -501,3 +501,20 @@ $("button").click(function(){
 
 // edicion de precio segun placa elegida
 
+$('button').click(function(){
+  var placa1= $("#inputPagina3-1660").val();
+  var placa2=$("#inputPagina3-3090").val();
+  var placa3= $("#inputPagina3-3060").val();
+  var placa4=  $("#inputPagina3-1660GTX").val();
+  if(placa1 == 0 && placa2 == 0 && placa3 == 0 && placa4 == 0){
+    $("#precio").text("$0.00");
+  }else if(placa1 >=1 || placa2 >=1 || placa3 >=1 || placa4 >=1){
+    
+    // valores de las placas
+    precio1=placa1*78000;
+    precio2=placa2*90000;
+    precio3=placa3*93000;
+    precio4=placa4*110000;
+    $("#precio").text(`$${precio1+precio2+precio3+precio4}`);
+  }
+})
