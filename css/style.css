@@ -18,9 +18,53 @@ font-family: 'Inter', sans-serif;
     background-image: url(../img/backgroundRig1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -8vw;
-   
+    background-position-y: -11vw;
 
+}
+/* menu */
+.menu{
+    display: flex;
+    align-items: center;
+    width: 99vw;
+    height: 45px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.menu .btn{
+    margin: unset;
+    padding: unset;
+    scale: unset;
+}
+.banderinLogo{
+position: absolute;
+width: 130px;
+height: 120px;
+left: 82.5%;
+top: 99%;
+background: linear-gradient(0deg, #E9E9E9 3.33%, rgba(233, 233, 233, 0) 100%);
+filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.25));
+border-radius: 0px 0px 20px 20px;
+
+}
+.banderinLogo img{
+  width: 100%;
+ margin-top: 17%;
+}
+
+.botonMenu{
+    background: linear-gradient(90deg, #F71A79 0%, #D2045D 99.99%);
+    box-shadow: 3px 3px 4px rgba(247, 26, 121, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+
+}
+.botonMenu p{
+    font-size: 70%;
+    color:white; 
+    font-weight: 700;
+}
+.izquierdaMenu{
+    width: 15%;
 }
 .marginTop{
     margin-top: 6vh;

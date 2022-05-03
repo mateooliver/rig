@@ -303,80 +303,7 @@ $("#calcular").click(function Calcular (e){
                     $("#contenedor3").hide();
                   })
               
-                
-
-                  //   $("#resultado").append(`<div id=${resultadoPresupuesto.id} class="d-flex ancho2 mx-auto align-items-center" style="margin-top:2vh; height:8vh; font-family: 'Inter';
-                  //   font-style: normal;font-weight: 300; background: #E2E2E2;box-shadow: 1% 3% 2%px rgba(0, 0, 0, 0.1);
-                  //   border-radius: 50px">
-                  //   <div class="my-auto  btn" id='atras' style="font-weight: 300; background: rgba(238, 32, 134, 0.25);border-radius: 50px; color:white; height:8vh; width: fit-content; padding:0 1% 0 0%;"><div class="d-flex mx-3" style="height:8vh;"><img class="my-auto mx-1" style="height:25px;" src="../img/atras.png"><p class="fs-4 my-auto" > Atras</p></div></div>
-    
-                  //     <div class="d-flex justify-content-between" style="width:100%;" >
-                  //       <div class="d-flex" >
-                  //         <span class="fs-2 ms-2 mx-1" style="margin:auto; font-family: 'Inter';font-style: normal;font-weight: 700;">Rig </span>
-                  //         <p class="textoResultado"  font-weight: 300;"> con ${resultadoPresupuesto.cantidad} placa ${resultadoPresupuesto.placa} </p>
-                  //       </div>
-                  //       <div class="d-flex my-auto">
-                  //         <p style="margin:auto;"> <span class="fw-bold ">W</span> ${resultadoPresupuesto.wats}</p> 
-                  //         <img class="mx-2 align-self-center" style="height:20px;" src="../img/linea.png">
-                  //         <p class="me-2" style="margin:auto;"> <span class="fw-bold ">mh/s</span> ${resultadoPresupuesto.mhs}</p>
-                  //     </div> 
-    
-                  //     </div>
-                  //   </div>
-                  //   <div class="col-9 mx-auto">
-                  //   <table class="table" >
-                  //   <thead>
-                  //     <tr>
-                  //       <th scope="col"></th>
-                  //       <th scope="col"></th>
-                  //     </tr>
-                  //   </thead>
-                  //   <tbody>
-                  //     <tr>
-                  //       <th scope="row"><img class="componentes" src="../img/mother.png"></th>
-                  //       <td class="align-middle">Motherboard (MSI / ASUS)</td>
-               
-      
-                  //     </tr>
-                  //     <tr>
-                  //       <th scope="row"><img class="componentes" src="../img/core.png"></th>
-                  //       <td class="align-middle">Microporcesador 7ma generación (INTEL I3/AMD RYZEN 5)</td>
-    
-                  //     </tr>
-                  //     <tr>
-                  //       <th scope="row"><img class="componentes" src="../img/disco.png"></th>
-                  //       <td class="align-middle">Disco Rigido</td>
-    
-                  //   <tr>
-                  //       <th scope="row"><img class="componentes" src="../img/ram.png"></th>
-                  //       <td class="align-middle">Memoria</td>
-    
-                  //   </tr>
-                  //   <tr>
-                  //       <th scope="row"><img class="componentes" src="../img/video.png"></th>
-                  //       <td class="align-middle">Memoria Placa de video 1660 super</td>
-    
-                  //   </tr>
-                  //   </tbody>
-        
-                  // </table>
-                  // <hr>
-                  // </div>
-                  //   <div class="resultado mx-auto ">
-                  //       <div class="d-flex d-flex flex-row justify-content-between ">
-                  //           <div class="d-flex my-auto botonCompartir">
-                  //               <div class=" " ><img src="../img/compartir.png"></div>
-                  //               <div class=" " ><img  src="../img/descargar.png"></div>
-                  //           </div> 
-                  //           <div class="comprarOnline" > Comprar online</div>
-                  //           <div class="responsive precio">
-                  //               <span class="valor">Valor</span>
-                  //               <div class="backgroundPrecio">$78.888</div>
-                  //           </div>
-                  //       </div>
-                  //   </div>
-                  //   <div class="my-4" style="height:5px;"></div>
-                  
+              
                  $(".atras").click( function(){  
                   $("#calcularPresupuesto").click()})
                 
@@ -386,15 +313,7 @@ $("#calcular").click(function Calcular (e){
     }});
 
 
-    // pagina 3
-  //   $(".inputPagina3").change(function(){
-  //     var placa1= $("#inputPagina3-1660").val();
-  //      var placa2=$("#inputPagina3-3090").val();
-  //     var placa3= $("#inputPagina3-3060").val();
-  //    var placa4=  $("#inputPagina3-1660GTX").val();
-  //    var resultado2 = parseInt(placa1)+parseInt(placa2)+parseInt(placa3)+parseInt(placa4);
-  //  console.log(resultado2)
-  //  });
+
   let resultado2=parseInt(0)
 
   if(resultado2 <=6){
@@ -518,3 +437,14 @@ $('button').click(function(){
     $("#precio").text(`$${precio1+precio2+precio3+precio4}`);
   }
 })
+
+
+// Menu
+$('.botonMenu').click(function empezar(){
+  $(".banderinLogo").show()
+  $('.botonMenu').click(function(){
+  $(".banderinLogo").hide()
+  $('.botonMenu').click(function(){
+    empezar()})
+});
+});
