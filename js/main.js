@@ -459,9 +459,4 @@ $(".mobileTogle").click(function togle(){
   });
 })
 
-$(document).ready($(window).resize(function(){
-  if($(window).width() <= 820){
-    $('.botonMenu').attr('href', './index.html');
-  }
-}))
 
