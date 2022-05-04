@@ -70,14 +70,15 @@
     /* boton empezar */
     .botonMenu{
         width: fit-content;
-        padding: 5px;
     }
  
     /* oculta el banderin */ 
     .banderinLogo{
         display: none;
     }
-
+    .mas{
+        margin-left: 20px !important; ;
+    }
 
     .responsive{
         display: block;

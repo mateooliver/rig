@@ -460,9 +460,8 @@ $(".mobileTogle").click(function togle(){
 })
 
 $(document).ready($(window).resize(function(){
-  if($(window).width() < 820){
-    $(".mas").css('margin-left', '20px');
-    $(".falsoMargin2").append(`<hr class='col-6 mx-auto'/>`)
+  if($(window).width() <= 820){
     $('.botonMenu').attr('href', './index.html');
   }
 }))
+

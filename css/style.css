@@ -22,6 +22,9 @@ font-family: 'Inter', sans-serif;
 
 }
 /* menu */
+.mas{
+    margin-left:unset ;
+}
 .flex{
     display:flex;
 }
