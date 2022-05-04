@@ -448,3 +448,20 @@ $('.botonMenu').click(function empezar(){
     empezar()})
 });
 });
+
+$(".mobileTogle").click(function togle(){
+  $(".menu").css('left', '0px');
+  $(".mobileTogle").click(function(){
+    $(".menu").css('left', '-500px');
+    $(".mobileTogle").click(function(){
+    togle()
+    })
+  });
+})
+
+$(document).ready($(window).resize(function(){
+  if($(window).width() < 820){
+    $(".mas").css('margin-left', '20px');
+    $(".falsoMargin2").append(`<hr class='col-6 mx-auto'/>`)
+  }
+}))

@@ -22,6 +22,12 @@ font-family: 'Inter', sans-serif;
 
 }
 /* menu */
+.flex{
+    display:flex;
+}
+.mobileTogle{
+    display:none;
+}
 .menu{
     display: flex;
     align-items: center;
@@ -32,8 +38,11 @@ font-family: 'Inter', sans-serif;
 }
 .menu .btn{
     margin: unset;
-    padding: unset;
     scale: unset;
+}
+.menu div {
+    display:flex;
+
 }
 .banderinLogo{
 position: absolute;
@@ -63,6 +72,22 @@ border-radius: 0px 0px 20px 20px;
     color:white; 
     font-weight: 700;
 }
+.mobileReposition{
+    margin: 0 0 0 1.5%;
+}
+/* en mobile simula un margin top */
+.falsoMargin{
+    display: none;
+}
+.falsoMargin2{
+    display: none;
+}
+
+/* boton de empezar */
+.izquierdaMenu{
+    display: flex;
+}
+
 .izquierdaMenu{
     width: 15%;
 }

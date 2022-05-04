@@ -17,6 +17,68 @@
        
     
     }
+    /* Menu clases */
+    .flex{
+        display:unset;
+    }
+    .mobileTogle{
+        display: block;
+        float: right;
+    }
+    .menu{ 
+        display: unset;
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        height:110vh;
+        background-color:#FFFFFF;
+        top: -5%;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .menu div {
+        display:block;
+        margin: 25px auto;
+        line-height: 30px;
+    }
+    .menu div div:hover, .menu div div:active{
+        background-color: none;
+        color: #717171;
+    }
+
+    /* simula un margin top */
+    .falsoMargin{
+        display: block;
+        height: 110px;
+    }
+    .falsoMargin2{
+        display: block;
+        height: 30px;
+    }
+    /* esconde el burger menu de la izq */
+    .lineasIzqquierda{
+        display: none;
+    }
+    .izquierdaMenu{
+        display: block;
+    }
+    .esconderMobile{
+        display: none;
+    }
+
+    /* boton empezar */
+    .botonMenu{
+        width: fit-content;
+        padding: 5px;
+    }
+ 
+    /* oculta el banderin */ 
+    .banderinLogo{
+        display: none;
+    }
+
+
     .responsive{
         display: block;
     }
