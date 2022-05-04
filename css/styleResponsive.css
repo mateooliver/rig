@@ -69,7 +69,14 @@
 
     /* boton empezar */
     .botonMenu{
-        width: fit-content;
+        width: 20vw;
+        height: 4vh;
+        padding: unset;
+      
+    }
+    .botonMenu p{
+        text-align: center;
+        margin: auto;
     }
  
     /* oculta el banderin */ 
