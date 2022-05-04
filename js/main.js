@@ -440,13 +440,13 @@ $('button').click(function(){
 
 
 // Menu
-$('.botonMenu').click(function empezar(){
+$('.botonMenu').mouseover(function empezar(e){
+  e.preventDefault();
   $(".banderinLogo").show()
-  $('.botonMenu').click(function(){
-  $(".banderinLogo").hide()
-  $('.botonMenu').click(function(){
-    empezar()})
 });
+
+$('.botonMenu').mouseout(function(){
+  $(".banderinLogo").hide()
 });
 
 $(".mobileTogle").click(function togle(){
@@ -463,5 +463,6 @@ $(document).ready($(window).resize(function(){
   if($(window).width() < 820){
     $(".mas").css('margin-left', '20px');
     $(".falsoMargin2").append(`<hr class='col-6 mx-auto'/>`)
+    $('.botonMenu').attr('href', './index.html');
   }
 }))
